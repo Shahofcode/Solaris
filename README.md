@@ -1,2 +1,2 @@
 # Solaris
-Individuell Examination Javascript
+Individuell Examination Javascript om vårt solsystem
