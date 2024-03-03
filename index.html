@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<title>Solaris</title>
+<link rel="stylesheet" href="style.css" />
+<script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="info__Mercurialis"></div>
+    <div id="info__Venus"></div>
+    <div id="info__Tellus"></div>
+    <div id="info__Mars"></div>
+    <div id="info__Lovis"></div>
+    <div id="info__Saturnus"></div>
+    <div id="info__Uranus"></div>
+    <div id="info__Neptunus"></div>
+    <div id="Sun"></div>
+    <div class="container">
+        <section>
+            <h1>SOLSYSTEMET</h1>
+            <h2>SOLARIS</h2>
+            <form action="" onSubmit="submitSearch()">
+                <button id="search-button">
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+                </button>
+                <input type="text" id="search-input" placeholder="Search planets" />
+            </form>
+        </section>
+        <div class="planets">
+            <aside id="Mercurialis" onClick="setActivePlanet('Mercurialis')"></aside>
+            <aside id="Venus" onClick="setActivePlanet('Venus')"></aside>
+            <aside id="Tellus" onClick="setActivePlanet('Tellus')"></aside>
+            <aside id="Mars" onClick="setActivePlanet('Mars')"></aside>
+            <aside id="Lovis" onClick="setActivePlanet('Lovis')"></aside>
+            <aside id="Saturnus" onClick="setActivePlanet('Saturnus')">
+                <div id="ellipse"></div>
+            </aside>
+            <aside id="Uranus" onClick="setActivePlanet('Uranus')"></aside>
+            <aside id="Neptunus" onClick="setActivePlanet('Neptunus')"></aside>
+        </div>
+    </div>
+    <div class="infoWrapper">
+        <div class="infoPopUp">
+            <h3></h3>
+            <button class="close-btn" onClick="setActivePlanet(null)">
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+            </button>
+            <h4></h4>
+            <div class="description"></div>
+            <hr />
+            <div class="data">
+                <div class="data__circumference">
+                    <h5>OMKRETS</h5>
+                    <p></p>
+                </div>
+                <div class="data__distanceFromSun">
+                    <h5>KM FRÅN SOLEN</h5>
+                    <p></p>
+                </div>
+                <div class="data__maxTemp">
+                    <h5>MAX TEMPERATUR</h5>
+                    <p></p>
+                </div>
+                <div class="data__minTemp">
+                    <h5>MIN TEMPERATUR</h5>
+                    <p></p>
+                </div>
+                <hr />
+                <div class="data__moons">
+                    <h5>MÅNAR</h5>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

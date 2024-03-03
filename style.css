@@ -1,0 +1,508 @@
+@import url('https://fonts.google.com/selection?selected=Material+Symbols+Outlined:search:FILL@0;wght@400;GRAD@0;opsz@24');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow: hidden;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(90deg, #0C164D, #190B22);
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+section>h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+section>h2 {
+    margin-top: 10px;
+
+}
+
+h1 {
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 3rem;
+    font-family: "Anta", sans-serif;
+
+}
+
+h2 {
+    color: #FFD029;
+    letter-spacing: 8px;
+    font-family: "Anta", sans-serif;
+}
+
+p {
+    color: #fff;
+    font-family: 'Anta';
+    border-bottom: solid 2px #fff;
+    padding-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#search-bar {
+    width: 100%;
+    height: 780px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#search-input {
+    max-width: 330px;
+    width: 100%;
+    height: 50px;
+    font-size: 1rem;
+    background: linear-gradient(90deg, #0C164D, #190B22);
+    box-shadow: 0px 0vw 0vw 1px #428ed4;
+    text-indent: 15px;
+    letter-spacing: 1px;
+    border: 2px solid #428ed42b;
+    border-radius: 25px;
+    outline: none;
+    font-family: "Anta", sans-serif;
+    font-style: italic;
+    transition: box-shadow 0.25s;
+    color: white;
+}
+
+#search-input:focus-within {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
+}
+
+input::placeholder {
+    font-weight: lighter;
+
+}
+
+#search-input:active {
+    transform: scale(0.98);
+    transition: 0.95s;
+
+}
+
+input[type="text"]::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.455);
+
+}
+
+.material-symbols-outlined {
+    color: rgba(255, 255, 255, 0.455);
+}
+
+.material-symbols-outlined:hover {
+    color: white;
+}
+
+#search-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #428ed42b;
+    box-shadow: 0px 0vw 1vw 1px #428ed4;
+    cursor: pointer;
+    background-color: #0c164d;
+    margin-right: 20px;
+}
+
+
+#search-button:active {
+    transform: scale(0.88);
+}
+
+#search-button:hover {
+    background-color: #428ed4;
+    transition: 0.75s;
+}
+
+/* Solen är "fast"/ligger utanför kontainrar. Byter färg i js */
+#Sun,
+#info__Mercurialis,
+#info__Venus,
+#info__Tellus,
+#info__Mars,
+#info__Lovis,
+#info__Saturnus,
+#info__Uranus,
+#info__Neptunus {
+    background: #FFD029;
+    box-shadow: 0px 0px 250px 0px #e6be2fb9;
+    height: 100vh;
+    width: 25vw;
+    border-radius: 50%;
+    margin-left: -15vw;
+    cursor: pointer;
+    transition: 0.75s;
+}
+
+#Sun:hover {
+    transform: scale(1.08);
+    transition: 0.75s;
+}
+
+#Sun.inactive {
+    opacity: 0;
+}
+
+#info__Mercurialis,
+#info__Venus,
+#info__Tellus,
+#info__Mars,
+#info__Lovis,
+#info__Saturnus,
+#info__Uranus,
+#info__Neptunus {
+    position: absolute;
+    opacity: 0;
+}
+
+#info__Mercurialis.active,
+#info__Venus.active,
+#info__Tellus.active,
+#info__Mars.active,
+#info__Lovis.active,
+#info__Saturnus.active,
+#info__Uranus.active,
+#info__Neptunus.active {
+    opacity: 1;
+}
+
+#info__Mercurialis {
+    background: #888888;
+    box-shadow: 0px 0px 250px 0px #888888;
+}
+
+#info__Venus {
+    background: #E7CDCD;
+    box-shadow: 0px 0px 250px 0px #E7CDCD;
+}
+
+#info__Tellus {
+    background: #428ED4;
+    box-shadow: 0px 0px 250px 0px #428ED4;
+}
+
+#info__Mars {
+    background: #EF5F5F;
+    box-shadow: 0px 0px 250px 0px #EF5F5F;
+}
+
+#info__Lovis {
+    background: #E29468;
+    box-shadow: 0px 0px 250px 0px #E29468;
+}
+
+#info__Saturnus {
+    background: #C7AA72;
+    box-shadow: 0px 0px 250px 0px #C7AA72;
+}
+
+#info__Uranus {
+    background: #C9D4F1;
+    box-shadow: 0px 0px 250px 0px #C9D4F1;
+}
+
+#info__Neptunus {
+    background: #7A91A7;
+    box-shadow: 0px 0px 250px 0px #7A91A7;
+}
+
+#exitButton:hover {
+    color: #fff;
+    transform: scale(1.11);
+    transition: 0.75s;
+}
+
+#exitButton {
+    width: 6rem;
+    height: 2rem;
+    margin-left: 10rem;
+    background: #160e43;
+    border-radius: 15px;
+    color: #ffffffd6;
+    box-shadow: 0px 0vw 1vw 1px #428ed4;
+    border: none;
+}
+
+.container {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.infoWrapper {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    /* width:100vw;*/
+    height: 100vh;
+    width: 800px;
+    left: calc(50vw - 400px);
+}
+
+.infoWrapper.active {
+    display: flex;
+}
+
+.list-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    word-wrap: break-word;
+}
+
+.list-wrapper>dl:nth-child(5)>dt {
+    border-top: solid 2px #fff;
+    padding-top: 1rem;
+}
+
+.list-wrapper>dl:nth-child(5) {
+    grid-column: 2 span;
+}
+
+.infoPopUp {
+    width: 800px;
+    position: relative;
+}
+
+.infoPopUp h3 {
+    font-size: 56px;
+    color: #FFF;
+    font-family: "Anta", sans-serif;
+    margin: 0;
+}
+
+.infoPopUp .close-btn {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.4);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    outline: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    padding: 0;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.infoPopUp h4 {
+    font-size: 40px;
+    color: #FFD029;
+    letter-spacing: 8px;
+    font-family: "Anta", sans-serif;
+    margin: 0;
+}
+
+.infoPopUp .description {
+    color: #FFF;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.infoPopUp hr {
+    color: rgba(255, 255, 255, 0.1);
+    margin: 40px 0;
+}
+
+.infoPopUp .data div {
+    width: 398px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.infoPopUp .data div h5 {
+    color: #FFF;
+    font-family: "Anta", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.infoPopUp .data div p {
+    color: #FFF;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    border: none;
+    margin: 0;
+    margin-top: 8px;
+}
+
+.planets {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.planets>* {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.planets>.active {
+    height: 100vh !important;
+    width: 25vw !important;
+    position: absolute !important;
+    left: 0;
+    top: 0;
+    left: -15vw;
+}
+
+.planets>.inactive {
+    display: none;
+}
+
+.planets.active {
+    opacity: 1;
+}
+
+section {
+    text-align: end;
+    margin-right: 2.5rem;
+    padding: 2rem;
+    grid-column: 2 / 3;
+}
+
+#Mercurialis,
+#Mars {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+}
+
+#Uranus,
+#Neptunus {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+}
+
+#Mercurialis {
+    background: #888888;
+}
+
+#Mercurialis:hover {
+    box-shadow: 0px 0vw 1vw 4px #888888;
+    transition: 0.5s;
+}
+
+#Venus {
+    background: #E7CDCD;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+}
+
+#Venus:hover {
+    box-shadow: 0px 0vw 1vw 4px #E7CDCD;
+    transition: 0.5s;
+
+}
+
+#Tellus {
+    background: #428ED4;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+}
+
+#Tellus:hover {
+    box-shadow: 0px 0vw 1vw 4px #428ED4;
+    transition: 0.5s;
+}
+
+#Mars {
+    background: #EF5F5F;
+}
+
+#Mars:hover {
+    box-shadow: 0px 0vw 1vw 4px #EF5F5F;
+    transition: 0.5s;
+}
+
+#Lovis {
+    background: #E29468;
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+}
+
+#Lovis:hover {
+    box-shadow: 0px 0vw 1vw 4px #E29468;
+    transition: 0.5s;
+}
+
+#Saturnus {
+    background: #C7AA72;
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    position: relative;
+}
+
+#Saturnus:hover {
+    box-shadow: 0px 0vw 1vw 4px #C7AA72;
+    transition: 0.5s;
+}
+
+#ellipse {
+    height: 13rem;
+    width: 0.3rem;
+    border-radius: 50%;
+    background: #FFFFFF66;
+    opacity: 40%;
+    position: absolute;
+    top: -23%;
+    left: 50%;
+    transform: rotate(60deg);
+}
+
+#Uranus {
+    background: #C9D4F1;
+
+}
+
+#Uranus:hover {
+    box-shadow: 0px 0vw 1vw 4px #C9D4F1;
+    transition: 0.5s;
+}
+
+#Neptunus {
+    background: #7A91A7;
+}
+
+#Neptunus:hover {
+    box-shadow: 0px 0vw 1vw 4px #7A91A7;
+    transition: 0.5s;
+}
